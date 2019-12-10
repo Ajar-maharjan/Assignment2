@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/home"
     android:orientation="vertical"
     tools:context=".fragments.SwapFragment">
 
@@ -13,22 +13,25 @@
         android:layout_margin="20dp"
         android:gravity="center"
         android:text="To swap two numbers"
+        android:textColor="@color/background"
         android:textSize="22sp" />
 
     <EditText
         android:id="@+id/etNumber1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter First Number"
+        android:hint="Enter first number"
         android:inputType="number"
+        android:textColor="@color/background"
         android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etNumber2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Second Number"
+        android:hint="Enter second number"
         android:inputType="number"
+        android:textColor="@color/background"
         android:textSize="20sp" />
 
     <Button
@@ -37,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
+        android:background="@color/background"
         android:text="Swap Number"
         android:textSize="20sp" />
 
@@ -46,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="Result"
+        android:textColor="@color/background"
         android:textSize="20sp" />
 
 </LinearLayout>

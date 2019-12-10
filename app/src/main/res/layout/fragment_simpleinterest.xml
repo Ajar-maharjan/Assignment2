@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/home"
     android:orientation="vertical"
     tools:context=".fragments.SimpleInterestFragment">
 
@@ -13,14 +13,16 @@
         android:layout_margin="20dp"
         android:gravity="center"
         android:text="To calculate Simple interest"
+        android:textColor="@color/background"
         android:textSize="22sp" />
 
     <EditText
-        android:id="@+id/etPrinciple"
+        android:id="@+id/etPrincipal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Principle"
+        android:hint="Enter Principal"
         android:inputType="numberDecimal"
+        android:textColor="@color/background"
         android:textSize="20sp" />
 
     <EditText
@@ -29,6 +31,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter Time (in years)"
         android:inputType="numberDecimal"
+        android:textColor="@color/background"
         android:textSize="20sp" />
 
     <EditText
@@ -37,6 +40,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter Rate"
         android:inputType="numberDecimal"
+        android:textColor="@color/background"
         android:textSize="20sp" />
 
     <Button
@@ -44,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@color/background"
         android:text="Calcuate Simple interest"
         android:textSize="20sp" />
 
@@ -53,6 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="Result"
+        android:textColor="@color/background"
         android:textSize="20sp" />
 
 </LinearLayout>

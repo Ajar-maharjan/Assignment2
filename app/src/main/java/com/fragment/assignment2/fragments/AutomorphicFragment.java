@@ -1,16 +1,17 @@
 package com.fragment.assignment2.fragments;
 
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import com.fragment.assignment2.R;
 
@@ -39,8 +40,13 @@ public class AutomorphicFragment extends Fragment implements View.OnClickListene
         return view;
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onClick(View v) {
+        if (TextUtils.isEmpty(etAutomorphic.getText())) {
+            etAutomorphic.setError("Enter the number");
+            return;
+        }
         int num = Integer.parseInt(etAutomorphic.getText().toString());
 
         int i, digit = 1;
@@ -49,9 +55,9 @@ public class AutomorphicFragment extends Fragment implements View.OnClickListene
             digit = digit * 10;
         }
         if ((num * num) % digit == num) {
-            tvAutomorphic.setText(num + "Number is automorphic");
+            tvAutomorphic.setText(num + " is automorphic number");
         } else {
-            tvAutomorphic.setText(num + "Number is not automorphic");
+            tvAutomorphic.setText(num + " is not automorphic number");
         }
     }
 }

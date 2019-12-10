@@ -1,16 +1,17 @@
 package com.fragment.assignment2.fragments;
 
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import com.fragment.assignment2.R;
 
@@ -39,8 +40,13 @@ public class PalindromeFragment extends Fragment implements View.OnClickListener
         return view;
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onClick(View v) {
+        if (TextUtils.isEmpty(etPalindrome.getText())) {
+            etPalindrome.setError("Enter the number");
+            return;
+        }
         int temp, remainder, reverse = 0;
         int num = Integer.parseInt(etPalindrome.getText().toString());
         temp = num;

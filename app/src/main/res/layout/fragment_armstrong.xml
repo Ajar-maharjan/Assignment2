@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/home"
     android:orientation="vertical"
     tools:context=".fragments.ArmstrongFragment">
 
@@ -13,6 +13,7 @@
         android:layout_margin="20dp"
         android:gravity="center"
         android:text="To check if number is armstrong or not"
+        android:textColor="@color/background"
         android:textSize="19sp" />
 
     <EditText
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter a number"
         android:inputType="number"
+        android:textColor="@color/background"
         android:textSize="20sp" />
 
     <Button
@@ -28,6 +30,7 @@
         android:layout_width="247dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@color/background"
         android:text="Check armstrong"
         android:textSize="20sp" />
 
@@ -37,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="Result"
+        android:textColor="@color/background"
         android:textSize="20sp" />
 
 </LinearLayout>
