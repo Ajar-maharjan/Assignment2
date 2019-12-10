@@ -19,7 +19,6 @@ import com.fragment.assignment2.R;
  */
 public class PalindromeFragment extends Fragment implements View.OnClickListener {
 
-    private Button btnPalindrome;
     private EditText etPalindrome;
     private TextView tvPalindrome;
 
@@ -33,7 +32,7 @@ public class PalindromeFragment extends Fragment implements View.OnClickListener
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_palindrome, container, false);
-        btnPalindrome = view.findViewById(R.id.btnPalindrome);
+        Button btnPalindrome = view.findViewById(R.id.btnPalindrome);
         etPalindrome = view.findViewById(R.id.etPalindrome);
         tvPalindrome = view.findViewById(R.id.tvPalindrome);
         btnPalindrome.setOnClickListener(this);
@@ -53,9 +52,9 @@ public class PalindromeFragment extends Fragment implements View.OnClickListener
         }
 
         if (temp == reverse) {
-            tvPalindrome.setText("The number is Palindrome!");
+            tvPalindrome.setText(temp + " is Palindrome number");
         } else {
-            tvPalindrome.setText("The number is not Palindrome!");
+            tvPalindrome.setText(temp + " is not Palindrome number");
         }
     }
 

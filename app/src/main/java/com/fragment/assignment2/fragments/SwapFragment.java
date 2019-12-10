@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.fragment.assignment2.R;
 
@@ -15,6 +16,7 @@ import com.fragment.assignment2.R;
  * A simple {@link Fragment} subclass.
  */
 public class SwapFragment extends Fragment implements View.OnClickListener {
+
 
 
     public SwapFragment() {

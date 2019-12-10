@@ -19,7 +19,6 @@ import com.fragment.assignment2.R;
  */
 public class CircleAreaFragment extends Fragment implements View.OnClickListener {
 
-    private Button btnCalculateArea;
     private EditText etRadius;
     private TextView tvCircleArea;
 
@@ -33,7 +32,7 @@ public class CircleAreaFragment extends Fragment implements View.OnClickListener
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_circlearea, container, false);
-        btnCalculateArea = view.findViewById(R.id.btnCalculateArea);
+        Button btnCalculateArea = view.findViewById(R.id.btnCalculateArea);
         etRadius = view.findViewById(R.id.etRadius);
         tvCircleArea = view.findViewById(R.id.tvCircleArea);
         btnCalculateArea.setOnClickListener(this);
@@ -45,6 +44,6 @@ public class CircleAreaFragment extends Fragment implements View.OnClickListener
         float area, radius;
         radius = Float.parseFloat(etRadius.getText().toString());
         area = (float) (3.14 * radius * radius);
-        tvCircleArea.setText(area + "");
+        tvCircleArea.setText(area + "sq cm is the area of circle");
     }
 }

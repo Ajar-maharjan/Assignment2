@@ -19,7 +19,6 @@ import com.fragment.assignment2.R;
  */
 public class ArmstrongFragment extends Fragment implements View.OnClickListener {
 
-    private Button btnArmstrong;
     private EditText etArmstrong;
     private TextView tvArmstrong;
 
@@ -33,7 +32,7 @@ public class ArmstrongFragment extends Fragment implements View.OnClickListener 
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_armstrong, container, false);
-        btnArmstrong = view.findViewById(R.id.btnArmstrong);
+        Button btnArmstrong = view.findViewById(R.id.btnArmstrong);
         etArmstrong = view.findViewById(R.id.etArmstrong);
         tvArmstrong = view.findViewById(R.id.tvArmstrong);
         btnArmstrong.setOnClickListener(this);
@@ -51,9 +50,9 @@ public class ArmstrongFragment extends Fragment implements View.OnClickListener 
             number = number / 10;
         }
         if (temp == sum) {
-            tvArmstrong.setText("Number is Armstrong");
+            tvArmstrong.setText(temp + " is Armstrong number");
         } else {
-            tvArmstrong.setText("Number is not Armstrong");
+            tvArmstrong.setText(temp + " is not Armstrong number");
         }
     }
 }
