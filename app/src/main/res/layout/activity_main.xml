@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/home"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="179dp"
-        android:background="#4267B2"
+        android:background="@color/colorPrimary"
         android:columnCount="3"
         android:rowCount="3"
         tools:context=".GridActivity">
