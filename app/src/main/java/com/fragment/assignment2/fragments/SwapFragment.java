@@ -49,7 +49,7 @@ public class SwapFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (TextUtils.isEmpty(etNumber1.getText())) {
-            etNumber2.setError("Enter first number");
+            etNumber1.setError("Enter first number");
             return;
         }
         if (TextUtils.isEmpty(etNumber2.getText())) {
